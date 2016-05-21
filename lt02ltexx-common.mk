@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
     
 #OTA
 PRODUCT_PACKAGES += \
-    SlimOTA[/QUOTE]
+    SlimOTA
 
 # call common lt02ltexx system props
 $(call inherit-product, device/samsung/lt02ltexx-common/system_prop.mk)
