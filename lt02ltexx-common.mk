@@ -22,7 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/lt02ltexx-common/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1024
@@ -129,6 +129,10 @@ PRODUCT_PACKAGES += \
 # Voice processing
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
+    
+#OTA
+PRODUCT_PACKAGES += \
+    SlimOTA[/QUOTE]
 
 # call common lt02ltexx system props
 $(call inherit-product, device/samsung/lt02ltexx-common/system_prop.mk)
