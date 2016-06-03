@@ -122,16 +122,8 @@ PRODUCT_PACKAGES += \
     libril_shim
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
-
-# Voice processing
-PRODUCT_PACKAGES += \
-    libqcomvoiceprocessing
-    
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
+# PRODUCT_PACKAGES += \
+#    Snap
 
 # call common lt02ltexx system props
 $(call inherit-product, device/samsung/lt02ltexx-common/system_prop.mk)
