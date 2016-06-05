@@ -31,6 +31,9 @@ TARGET_SCREEN_WIDTH := 600
 # Genlock is needed for camera blob
 PRODUCT_PACKAGES += \
     libgenlock
+    
+ # compile SnapdragonCamera instead of Camera2
+TARGET_USES_SNAPDRAGONCAMERA := true
 
 # Permissions
 PRODUCT_COPY_FILES += \
