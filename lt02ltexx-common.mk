@@ -127,6 +127,9 @@ PRODUCT_PACKAGES += \
 # PRODUCT_PACKAGES += \
 #    Snap
 
++ # compile SnapdragonCamera instead of Camera2
++TARGET_USES_SNAPDRAGONCAMERA := true
+
 # Voice processing
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
