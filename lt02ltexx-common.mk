@@ -123,8 +123,8 @@ PRODUCT_PACKAGES += \
     libril_shim
 
 # Camera
-# PRODUCT_PACKAGES += \
-#    Snap
+ PRODUCT_PACKAGES += \
+    Snap
 
 # Voice processing
 PRODUCT_PACKAGES += \
