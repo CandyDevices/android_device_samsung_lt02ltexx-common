@@ -35,6 +35,20 @@ TARGET_KERNEL_CONFIG         := cyanogen_lt02ltexx_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
+#Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-5.x/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi
+
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 5.3
+
+# Optimizations
+CLANG_O3 := true
+STRICT_ALIASING := false
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
 
@@ -55,6 +69,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/lt02ltexx-common/b
 
 # Audio
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
+# USE_CUSTOM_AUDIO_POLICY := 1
 
 # Allow suspend in charge mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -68,6 +83,9 @@ TARGET_NEED_DISABLE_FACE_DETECTION_BOTH_CAMERAS := true
 # RIL
 COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 BOARD_RIL_CLASS := ../../../device/samsung/lt02ltexx-common/ril/
+
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
 
 # CMHW
 BOARD_HARDWARE_CLASS := device/samsung/lt02ltexx-common/cmhw
