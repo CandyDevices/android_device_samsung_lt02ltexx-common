@@ -48,6 +48,7 @@ STRICT_ALIASING := false
 KRAIT_TUNINGS := true
 GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
+USE_PIPE := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
