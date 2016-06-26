@@ -55,6 +55,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/lt02ltexx-common/b
 
 # Audio
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
+USE_CUSTOM_AUDIO_POLICY := 1
 
 # Allow suspend in charge mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
