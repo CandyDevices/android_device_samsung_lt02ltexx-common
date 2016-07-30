@@ -8,7 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=lt02lteRil \
+    ro.telephony.ril_class=SerranoRIL \
     ro.ril.telephony.mqanelements=6 \
     persist.radio.add_power_save=1
 
@@ -24,10 +24,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.disable=1 \
     mm.enable.smoothstreaming=true \
-    ro.qc.sdk.audio.fluencetype=none \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.speaker=true \
     use.dedicated.device.for.voip=true \
     qcom.hw.aac.encoder=true \
     media.aac_51_output_enabled=true
